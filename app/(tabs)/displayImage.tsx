@@ -3,6 +3,7 @@ import { Image, ImageStyle, StyleSheet, StyleProp } from "react-native";
 const styles = StyleSheet.create({
     logo: {
         flex: 1,
+        resizeMode: "contain",
 
     },
 });
@@ -14,7 +15,7 @@ type DisplayImageProps = {
 const DisplayImage = ({ style }: DisplayImageProps) => (
     <Image
         style={[styles.logo, style]}
-        source={require("/home/mario/PDM/assets/images/splash-icon.png")}
+        source={require("../../assets/images/splash-icon.png")}
     />
 );
 
